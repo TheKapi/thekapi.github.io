@@ -29,9 +29,9 @@
           <div class="menu__line"></div>
         </div>
         <ul class="menu__list">
-          <a href="products.html" class="menu__close">
+          <div class="menu__close">
             <i class="fa fa-times"></i>
-          </a>
+          </div>
           <li class="menu__item">
             <a class="menu__link" href="index.html">home</a>
           </li>
@@ -44,91 +44,118 @@
       <section class="libary">
         <header class="libary__header">
           <h2 class="libary__content">Products</h2>
+          <div class="libary__nav">
+            <p class="libary__women">women</p>
+            <p class="libary__men">man</p>
+            <p class="libary__all">all</p>
+          </div>
         </header>
-        <figure class="libary__item">
+        <figure class="libary__item" data-gender="men">
           <img src="./img/chicago.png" alt="nike" class="libary__image" />
           <div class="libary__description">
-            <figcaption class="libary__content">Nike Dunk Chicago</figcaption>
+            <figcaption class="libary__text">
+              <p class="libary__model">Nike Dunk Chicago</p>
+              <p class="libary__selected"></p>
+            </figcaption>
           </div>
         </figure>
-        <figure class="libary__item">
+        <figure class="libary__item" data-gender="men">
           <img src="./img/chunky.png" alt="nike" class="libary__image" />
           <div class="libary__description">
-            <figcaption class="libary__content">
-              Nike SB Dunk Low x Ben
+            <figcaption class="libary__text">
+              <p class="libary__model">Nike SB Dunk Low x Ben</p>
+              <p class="libary__selected"></p>
             </figcaption>
           </div>
         </figure>
-        <figure class="libary__item">
+        <figure class="libary__item" data-gender="men">
           <img src="./img/viotech.png" alt="nike" class="libary__image" />
           <div class="libary__description">
-            <figcaption class="libary__content">Nike Dunk Viotech</figcaption>
+            <figcaption class="libary__text">
+              <p class="libary__model">Nike Dunk Viotech</p>
+              <p class="libary__selected"></p>
+            </figcaption>
           </div>
         </figure>
-        <figure class="libary__item">
+        <figure class="libary__item" data-gender="men">
           <img src="./img/veneer.png" alt="nike" class="libary__image" />
           <div class="libary__description">
-            <figcaption class="libary__content">Nike Dunk Veneer</figcaption>
-          </div>
-        </figure>
-        <figure class="libary__item">
-          <img src="./img/phantom.png" alt=nike" class="libary__image" />
-          <div class="libary__description">
-            <figcaption class="libary__content">
-              Nike Air Jordan 1 Phantom
+            <figcaption class="libary__text">
+              <p class="libary__model">Nike Dunk Veneer</p>
+              <p class="libary__selected"></p>
             </figcaption>
           </div>
         </figure>
-        <figure class="libary__item">
+        <figure class="libary__item" data-gender="women">
+          <img src="./img/phantom.png" alt="nike" class="libary__image" />
+          <div class="libary__description">
+            <figcaption class="libary__text">
+              <p class="libary__model">Nike Air Jordan 1 Phantom</p>
+              <p class="libary__selected"></p>
+            </figcaption>
+          </div>
+        </figure>
+        <figure class="libary__item" data-gender="men">
           <img src="./img/aj1chic.png" alt="nike" class="libary__image" />
           <div class="libary__description">
-            <figcaption class="libary__content">
-              Nike Air Jordan 1 Chicago
+            <figcaption class="libary__text">
+              <p class="libary__model">Nike Air Jordan 1 Chicago</p>
+              <p class="libary__selected"></p>
             </figcaption>
           </div>
         </figure>
-        <figure class="libary__item">
+        <figure class="libary__item" data-gender="men">
           <img src="./img/travis.png" alt="nike" class="libary__image" />
           <div class="libary__description">
-            <figcaption class="libary__content">
-              Nike Air Jordan 1 x Travis Scott
+            <figcaption class="libary__text">
+              <p class="libary__model">Nike Air Jordan 1 x Travis Scott</p>
+              <p class="libary__selected"></p>
             </figcaption>
           </div>
         </figure>
-        <figure class="libary__item">
+        <figure class="libary__item" data-gender="women">
           <img src="./img/shoe2.png" alt="nike" class="libary__image" />
           <div class="libary__description">
-            <figcaption class="libary__content">
-              Off-White x Nike Air Force 1 MCA
+            <figcaption class="libary__text">
+              <p class="libary__model">Off-White x Nike Air Force 1 MCA</p>
+              <p class="libary__selected"></p>
             </figcaption>
           </div>
         </figure>
-        <figure class="libary__item">
+        <figure class="libary__item" data-gender="women">
           <img src="./img/af1.png" alt="nike" class="libary__image" />
           <div class="libary__description">
-            <figcaption class="libary__content">
-              Off-White x Nike Air Force 1 Volt
+            <figcaption class="libary__text">
+              <p class="libary__model">Off-White x Nike Air Force 1 Volt</p>
+              <p class="libary__selected"></p>
             </figcaption>
           </div>
         </figure>
-        <figure class="libary__item">
+        <figure class="libary__item" data-gender="women">
           <img src="./img/yeezy.png" alt="adidas" class="libary__image" />
           <div class="libary__description">
-            <figcaption class="libary__content">
-              Adidas Yeezy Boost 350 V2 Static
+            <figcaption class="libary__text">
+              <p class="libary__model">Adidas Yeezy Boost 350 V2 Static</p>
+              <p class="libary__selected"></p>
             </figcaption>
           </div>
         </figure>
-        <figure class="libary__item">
+        <figure class="libary__item" data-gender="women">
           <img src="./img/balenciaga.png" alt="adidas" class="libary__image" />
           <div class="libary__description">
-            <figcaption class="libary__content">Balenciaga Triple S</figcaption>
+            <figcaption class="libary__text">
+              <p class="libary__model">Balenciaga Triple S</p>
+              <p class="libary__selected"></p>
+            </figcaption>
           </div>
         </figure>
-        <figure class="libary__item">
+        <figure class="libary__item" data-gender="women">
           <img src="./img/newbalance.png" alt="adidas" class="libary__image" />
           <div class="libary__description">
-            <figcaption class="libary__content">New Balance 550</figcaption>
+            <figcaption class="libary__text">
+              <p class="libary__model">New Balance 550</p>
+              <p class="libary__selected"></p>
+            </figcaption>
           </div>
         </figure>
       </section>
@@ -169,6 +196,7 @@
       </footer>
       <footer class="mobile__footer">&copy; 2021 Sneakk Team</footer>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

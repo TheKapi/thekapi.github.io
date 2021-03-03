@@ -148,9 +148,7 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      opacity: 0;
       transform: translateY(-100%);
-      transition: opacity 0.3s;
     }
 
     &__hamburger {
