@@ -47,8 +47,8 @@ body {
     display: flex;
   }
 
-  &__item {
-    margin: 0 1.5em;
+  &__item--middle {
+    margin: 0 3em;
   }
 
   &__link {
@@ -98,7 +98,6 @@ body {
   padding: 3em;
   justify-content: center;
   animation: display 1.5s;
-  margin-bottom: 10em;
 
   &__header {
     margin: 0;
@@ -118,7 +117,7 @@ body {
     align-items: center;
     color: $orange;
     margin-bottom: 4px;
-    padding-right: 0 0 0 0.2em;
+    padding-right: 0.1em;
   }
 
   &__men {

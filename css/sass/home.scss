@@ -47,8 +47,8 @@ body {
     display: flex;
   }
 
-  &__item {
-    margin: 0 1.5em;
+  &__item--middle {
+    margin: 0 3em;
   }
 
   &__link {
@@ -96,7 +96,7 @@ body {
   align-items: center;
 
   &__content {
-    width: 40%;
+    width: 30%;
     padding: 0.5em;
     font-size: 1.2em;
     border-left: 3px solid $orange;
@@ -108,7 +108,7 @@ body {
   }
 
   &__box__image {
-    width: 50%;
+    width: 40%;
     text-align: center;
     animation: slide-bot 1s;
   }
@@ -121,7 +121,7 @@ body {
 .libary {
   width: 100%;
   height: 100vh;
-  background: rgb(235, 235, 235);
+  background: $light-grey;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

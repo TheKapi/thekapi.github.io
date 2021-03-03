@@ -95,6 +95,7 @@
   }
   .mobile__footer {
     width: 100%;
+    margin-top: 0;
     display: flex;
     height: 20vh;
     justify-content: center;
@@ -145,8 +146,8 @@ body {
   display: flex;
 }
 
-.menu__item {
-  margin: 0 1.5em;
+.menu__item--middle {
+  margin: 0 3em;
 }
 
 .menu__link {
@@ -194,7 +195,7 @@ body {
 }
 
 .main__content {
-  width: 40%;
+  width: 30%;
   padding: 0.5em;
   font-size: 1.2em;
   border-left: 3px solid #f06e3c;
@@ -206,7 +207,7 @@ body {
 }
 
 .main__box__image {
-  width: 50%;
+  width: 40%;
   text-align: center;
   animation: slide-bot 1s;
 }
@@ -218,7 +219,7 @@ body {
 .libary {
   width: 100%;
   height: 100vh;
-  background: #ebebeb;
+  background: #fafafa;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
