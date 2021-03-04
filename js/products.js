@@ -50,3 +50,10 @@ men.addEventListener("click", () => {
     }
   }
 });
+
+//fixes navigation change
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 880) {
+    navList.className = "menu__list";
+  }
+});

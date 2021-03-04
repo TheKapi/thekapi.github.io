@@ -45,6 +45,12 @@ body {
   &__list {
     list-style: none;
     display: flex;
+    position: static;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    align-items: none;
+    justify-content: none;
   }
 
   &__item--middle {
@@ -174,6 +180,7 @@ body {
 @media screen and (max-width: 880px) {
   .menu {
     &__list {
+      list-style: none;
       position: absolute;
       top: 0;
       right: 0;
@@ -184,7 +191,22 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      transform: translateY(-100%);
+      transform: translateX(-100%);
+    }
+
+    &__list--visible {
+      list-style: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 100%;
+      background: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      transform: translateX(0);
     }
 
     &__hamburger {
