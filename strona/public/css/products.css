@@ -103,19 +103,19 @@
   }
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: white;
-  font-family: "Montserrat", sans-serif;
-}
-
-.wrapper {
+.login {
   width: 100%;
+  display: flex;
+  background: #fafafa;
+  align-items: center;
+  height: 3vh;
+  justify-content: flex-end;
+  animation: slide-ver 1s;
+}
+
+.login__name {
+  font-size: 0.8em;
+  padding-right: 1em;
 }
 
 .menu {
@@ -148,12 +148,24 @@ body {
   height: auto;
   width: auto;
   flex-direction: row;
-  align-items: none;
-  justify-content: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu__item--middle {
   margin: 0 3em;
+}
+
+.menu__item--login {
+  background-color: #323232;
+  border-radius: 5em;
+}
+
+.menu__item--login a {
+  color: white;
+  display: block;
+  padding: 0.4em 1.2em;
+  border-radius: 5em;
 }
 
 .menu__link {
@@ -192,54 +204,7 @@ body {
   color: black;
 }
 
-.main {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.main__content {
-  width: 30%;
-  padding: 0.5em;
-  font-size: 1.2em;
-  border-left: 3px solid #f06e3c;
-  overflow: hidden;
-}
-
-.main__text {
-  animation: slide-hor 1s;
-}
-
-.main__box__image {
-  width: 40%;
-  text-align: center;
-  animation: slide-bot 1s;
-}
-
-.main__image {
-  width: 100%;
-}
-
-.libary {
-  width: 100%;
-  height: 100vh;
-  background: #fafafa;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.libary__content {
-  text-align: center;
-}
-
-.libary__image {
-  width: 100%;
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
   .menu__list {
     list-style: none;
     position: absolute;
@@ -274,19 +239,128 @@ body {
   .menu__close {
     display: block;
   }
-  .main {
-    flex-direction: column;
-  }
-  .main__content {
-    width: 80%;
-    order: 1;
-  }
-  .main__box__image {
-    width: 80%;
-    order: 0;
-  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.libary {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-auto-flow: row dense;
+  gap: 1em;
+  padding: 3em;
+  justify-content: center;
+  animation: display 1.5s;
+}
+
+.libary__header {
+  margin: 0;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 5vh;
+  font-size: 1.5em;
+}
+
+.libary__nav {
+  font-size: 1rem;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #f06e3c;
+  margin-bottom: 4px;
+  padding-right: 0.1em;
+}
+
+.libary__men {
+  margin: 0 0.5em;
+}
+
+.libary__men, .libary__women, .libary__all {
+  cursor: pointer;
+}
+
+.libary__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  background-color: #f2f2f2;
+  justify-content: center;
+  position: relative;
+}
+
+.libary__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.libary__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+  width: 100%;
+  padding: 0.5em 0 0.5em 0.1em;
+}
+
+.libary__selected {
+  color: #f5a383;
+}
+
+@media screen and (max-width: 1300px) {
   .libary {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 400px);
+  }
+  .libary__header, .libary__gender {
+    grid-column: 1/3;
   }
 }
-/*# sourceMappingURL=home.css.map */
+
+@media screen and (max-width: 880px) {
+  .libary {
+    grid-template-columns: 400px;
+  }
+  .libary__header, .libary__nav {
+    grid-column: 1/2;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .libary {
+    grid-template-columns: 300px;
+  }
+  .libary__header {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: 1/2;
+    height: 15vh;
+  }
+  .libary__nav {
+    grid-column: 1/2;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 0 0 0.1em;
+  }
+}
+/*# sourceMappingURL=products.css.map */

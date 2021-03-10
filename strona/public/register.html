@@ -7,15 +7,13 @@
     <meta name="keywords" content="streetwear, shoes, fashion" />
     <meta name="description" content="Website for buying premiere shoes." />
     <title>Sneakk</title>
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <link rel="icon" href="./img/icon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <div class="wrapper">
+      <nav class="login"><p class="login__name"></p></nav>
       <nav class="menu">
         <header class="menu__logo">
           <h1 class="menu__title">
@@ -37,31 +35,24 @@
           <li class="menu__item menu__item--middle">
             <a class="menu__link" href="products.html">products</a>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">contact</a></li>
+          <li class="menu__item menu__item--login"><a class="menu__link" href="login.html">log in</a></li>
         </ul>
       </nav>
       <main class="main">
         <section class="main__content">
-          <p class="main__text">
-            This is website for buying premiere shoes. Nike Dunks, Nike Jordan ones, Adidas Yeezys
-            and many others.
-          </p>
+          <div class="main__blur"></div>
+          <img src="./img/bg.jpg" alt="shoe" class="main__image" />
         </section>
-        <div class="main__box__image">
-          <img class="main__image" src="./img/logo.png" alt="shoe" />
-          <p class="main__image__description">Nike Dunk Syracuse</p>
-        </div>
+        <section class="main__content">
+          <header><h2>Register</h2></header>
+          <form class="main__form">
+            <label for="email" class="main__login">email<input type="email" name="email" id="email" required class="main__input" /></label>
+            <label for="password" class="main__login">password<input type="password" name="password" id="password" required class="main__input" /></label>
+            <button type="submit" class="main__submit">register</button>
+            <p class="main__form__text">You can login <a href="login.html" class="main__link">here</a></p>
+          </form>
+        </section>
       </main>
-      <article class="libary">
-        <div class="libary__images">
-          <img src="./img/shoe1.png" alt="shoe" class="libary__image" />
-          <p class="libary__content">Nike Dunk Chicago</p>
-        </div>
-        <div class="libary__images">
-          <img src="./img/shoe2.png" alt="shoe" class="libary__image" />
-          <p class="libary__content">Nike Air Force 1 x Off-White</p>
-        </div>
-      </article>
       <footer class="footer">
         <div class="footer__column">
           <div class="footer__content">
@@ -99,7 +90,8 @@
       </footer>
       <footer class="mobile__footer">&copy; 2021 Sneakk Team</footer>
     </div>
-    <script src="./js/home.js"></script>
+    <script src="./js/register.js"></script>
+    <script src="./js/user.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>

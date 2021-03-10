@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kacper Gembalczyk" />
+    <meta name="keywords" content="streetwear, shoes, fashion" />
+    <meta name="description" content="Website for buying premiere shoes." />
+    <title>Sneakk</title>
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="icon" href="./img/icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="login"><p class="login__name"></p></nav>
+      <nav class="menu">
+        <header class="menu__logo">
+          <h1 class="menu__title">
+            <a class="menu__link" href="index.html">Snea<span class="menu__letter">k</span>k</a>
+          </h1>
+        </header>
+        <div class="menu__hamburger">
+          <div class="menu__line"></div>
+          <div class="menu__line"></div>
+          <div class="menu__line"></div>
+        </div>
+        <ul class="menu__list">
+          <div class="menu__close">
+            <i class="fa fa-times"></i>
+          </div>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">home</a>
+          </li>
+          <li class="menu__item menu__item--middle">
+            <a class="menu__link" href="products.html">products</a>
+          </li>
+          <li class="menu__item menu__item--login"><a class="menu__link" href="login.html">log in</a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <section class="main__content">
+          <div class="main__blur"></div>
+          <img src="./img/bg.jpg" alt="shoe" class="main__image" />
+        </section>
+        <section class="main__content">
+          <header><h2>Login</h2></header>
+          <form class="main__form">
+            <label for="email" class="main__login">email<input type="email" name="email" id="email" required class="main__input" /></label>
+            <label for="password" class="main__login">password<input type="password" name="password" id="password" required class="main__input" /></label>
+            <button type="submit" class="main__submit">log in</button>
+            <p class="main__form__text">You can register <a href="register.html" class="main__link">here</a></p>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__column">
+          <div class="footer__content">
+            <header class="footer__title">
+              <h2>Support</h2>
+            </header>
+            <a class="footer__link" href="#">About</a>
+            <a class="footer__link" href="#">FAQ</a>
+            <a class="footer__link" href="#">Donate</a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__content">
+            <header class="footer__title">
+              <h2>Other</h2>
+            </header>
+            <a class="footer__link" href="#">Settings</a>
+            <a class="footer__link" href="#">Account</a>
+            <a class="footer__link" href="#">Privacy</a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__content">
+            <header class="footer__title">
+              <h2>Contact</h2>
+            </header>
+            <a class="footer__link" href="#">ul. Zwycięstwa 13A, Gdańsk</a>
+            <a class="footer__link" href="#">tel. 640 835 920</a>
+            <a class="footer__link" href="#">email: sneakk@gmail.com</a>
+          </div>
+        </div>
+        <div class="footer__copyright__box">
+          <div class="footer__copyright">&copy; 2021 Sneakk Team</div>
+        </div>
+      </footer>
+      <footer class="mobile__footer">&copy; 2021 Sneakk Team</footer>
+    </div>
+    <script src="./js/login.js"></script>
+    <script src="./js/user.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

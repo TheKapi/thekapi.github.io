@@ -1,6 +1,7 @@
 @import "_variables.scss";
 @import "_keyframes.scss";
 @import "_footer.scss";
+@import "_menu.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
@@ -18,80 +19,6 @@ body {
 
 .wrapper {
   width: 100%;
-}
-
-.menu {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px);
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  animation: slide-ver 1s;
-
-  &__logo {
-    display: flex;
-  }
-
-  &__title {
-    font-size: 1.8em;
-    letter-spacing: 0.1em;
-  }
-
-  &__list {
-    list-style: none;
-    display: flex;
-    position: static;
-    height: auto;
-    width: auto;
-    flex-direction: row;
-    align-items: none;
-    justify-content: none;
-  }
-
-  &__item--middle {
-    margin: 0 3em;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: black;
-  }
-
-  &__letter {
-    color: $orange;
-  }
-
-  &__hamburger {
-    display: none;
-    cursor: pointer;
-  }
-
-  &__line {
-    width: 30px;
-    height: 4px;
-    background: black;
-    margin: 4px 0;
-    border-radius: 50px;
-  }
-
-  &__close {
-    position: absolute;
-    top: 3vh;
-    right: 10vw;
-    display: none;
-    cursor: pointer;
-
-    .fa {
-      font-size: 2em;
-      text-decoration: none;
-      color: black;
-    }
-  }
 }
 
 .libary {
@@ -178,46 +105,6 @@ body {
 }
 
 @media screen and (max-width: 880px) {
-  .menu {
-    &__list {
-      list-style: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: 100%;
-      background: rgb(255, 255, 255);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      transform: translateX(-100%);
-    }
-
-    &__list--visible {
-      list-style: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: 100%;
-      background: rgb(255, 255, 255);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      transform: translateX(0);
-    }
-
-    &__hamburger {
-      display: block;
-    }
-
-    &__close {
-      display: block;
-    }
-  }
-
   .libary {
     grid-template-columns: 400px;
 

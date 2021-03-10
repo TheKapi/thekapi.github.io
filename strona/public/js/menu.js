@@ -13,3 +13,10 @@ close.addEventListener("click", () => {
   navList.className = "menu__list";
   wrapper.style.position = "static";
 });
+
+//fixes navigation change
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 880) {
+    navList.className = "menu__list";
+  }
+});

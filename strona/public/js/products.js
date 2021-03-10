@@ -1,3 +1,6 @@
+//Login display
+const loginDisplay = document.querySelector(".login__name");
+
 //Gender select
 const images = document.querySelectorAll(".libary__item");
 const women = document.querySelector(".libary__women");
@@ -48,12 +51,5 @@ men.addEventListener("click", () => {
     } else {
       images[i].style.display = "none";
     }
-  }
-});
-
-//fixes navigation change
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 880) {
-    navList.className = "menu__list";
   }
 });
