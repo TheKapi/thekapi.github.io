@@ -106,7 +106,7 @@
 .login {
   width: 100%;
   display: flex;
-  background: white;
+  background: #fafafa;
   align-items: center;
   height: 3vh;
   justify-content: flex-end;

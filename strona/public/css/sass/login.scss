@@ -27,7 +27,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 500px);
   grid-auto-flow: row dense;
-  gap: 10em;
+  gap: 50px;
   justify-content: center;
   align-items: center;
 
@@ -98,13 +98,19 @@ body {
   }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1100px) {
   .main {
-    grid-template-columns: 400px;
+    grid-template-columns: 500px;
   }
 
   .mobile__footer {
-    margin-top: 70vh;
+    margin-top: 60vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main {
+    grid-template-columns: 400px;
   }
 }
 
