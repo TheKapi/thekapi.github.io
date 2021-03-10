@@ -106,7 +106,7 @@
 .login {
   width: 100%;
   display: flex;
-  background: #fafafa;
+  background: white;
   align-items: center;
   height: 3vh;
   justify-content: flex-end;
@@ -317,6 +317,7 @@ body {
 }
 
 .main__submit {
+  font-family: "Montserrat", sans-serif;
   width: 100%;
   margin: 2em;
   padding: 1em;
@@ -329,7 +330,7 @@ body {
 }
 
 .main__link {
-  color: blue;
+  color: #f06e3c;
 }
 
 @media screen and (max-width: 880px) {
@@ -337,7 +338,13 @@ body {
     grid-template-columns: 400px;
   }
   .mobile__footer {
-    margin-top: 80vh;
+    margin-top: 70vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    grid-template-columns: 300px;
   }
 }
 /*# sourceMappingURL=login.css.map */

@@ -81,6 +81,7 @@ body {
   }
 
   &__submit {
+    font-family: "Montserrat", sans-serif;
     width: 100%;
     margin: 2em;
     padding: 1em;
@@ -93,7 +94,7 @@ body {
   }
 
   &__link {
-    color: blue;
+    color: $orange;
   }
 }
 
@@ -103,6 +104,12 @@ body {
   }
 
   .mobile__footer {
-    margin-top: 80vh;
+    margin-top: 70vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    grid-template-columns: 300px;
   }
 }
