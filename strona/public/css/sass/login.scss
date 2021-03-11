@@ -41,6 +41,7 @@ body {
     align-items: center;
     overflow: hidden;
     flex-direction: column;
+    animation: display 1.5s;
   }
 
   &__blur {
@@ -111,11 +112,16 @@ body {
 @media screen and (max-width: 550px) {
   .main {
     grid-template-columns: 400px;
+
+    &__content {
+      height: 60vh;
+    }
   }
 }
 
 @media screen and (max-width: 450px) {
   .main {
     grid-template-columns: 300px;
+    height: 60vh;
   }
 }
